@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Fira_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const firaSans = Fira_Sans({subsets:['latin-ext'],weight:['100','200','300','400','500','600','700']});
 
 export const metadata: Metadata = {
-  title: "Prasoon Asati Portfolio website",
+  title: "Prasoon Asati",
   description: "mantained and developed by Prasoon asati",
 };
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={firaSans.className}>{children}</body>
     </html>
   );
 }
