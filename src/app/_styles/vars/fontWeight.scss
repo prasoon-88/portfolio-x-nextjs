@@ -1,0 +1,10 @@
+$i : 100;
+
+@while $i < 900{
+    .font-#{$i}{
+        font-weight: $i;
+    }
+
+    $i : $i + 100;
+}
+   
